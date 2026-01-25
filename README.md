@@ -3,7 +3,7 @@
 
 Guardian Protocol is an open-source, AI-driven security layer designed to detect, flag, and insure against digital fraud in real-time. Whether it's a UPI betting scam on Telegram or a phishing checkout page, Guardian is your financial bodyguard.
 
-[Explore the Docs] | [Join the Discord] [![Discord](https://img.shields.io/discord/YOUR_INVITE_ID?color=7289da&label=discord&logo=discord&logoColor=white)](https://discord.gg/cHFWcwHzq3)| [Report a Scam]
+[Explore the Docs] |[![Discord](https://img.shields.io/discord/YOUR_INVITE_ID?color=7289da&label=discord&logo=discord&logoColor=white)](https://discord.gg/cHFWcwHzq3)| [Report a Scam]
 
 ---
 
