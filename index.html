@@ -74,12 +74,44 @@
             <p class="text-gray-400 mb-5" style="font-size: 1.2rem; color: #888;">Protecting UPI, Credit Cards, and Crypto with an AI-driven decentralized fraud ledger.</p>
           </div>
 
-          <div class="countdown d-flex justify-content-center mb-5" data-count="2026/02/21">
-            <div><h3 class="count-days">14</h3><h4>Days</h4></div>
-            <div><h3 class="count-hours">00</h3><h4>Hours</h4></div>
-            <div><h3 class="count-minutes">00</h3><h4>Min</h4></div>
-            <div><h3 class="count-seconds">00</h3><h4>Sec</h4></div>
-          </div>
+<div class="countdown d-flex justify-content-center mb-5" data-count="2026/02/21">
+  <div><h3 class="count-days">14</h3><h4>Days</h4></div>
+  <div><h3 class="count-hours">00</h3><h4>Hours</h4></div>
+  <div><h3 class="count-minutes">00</h3><h4>Min</h4></div>
+  <div><h3 class="count-seconds">00</h3><h4>Sec</h4></div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init();
+    
+    // Updated Target date: 14 days from Feb 7, 2026 (Feb 21, 2026)
+    const countdownDate = new Date("Feb 21, 2026 12:00:00").getTime();
+
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+
+      const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.querySelector('.count-days').innerText = d;
+      document.querySelector('.count-hours').innerText = h.toString().padStart(2, '0');
+      document.querySelector('.count-minutes').innerText = m.toString().padStart(2, '0');
+      document.querySelector('.count-seconds').innerText = s.toString().padStart(2, '0');
+
+      if (distance < 0) {
+        clearInterval(interval);
+        document.querySelector('.countdown').innerHTML = "<h3>PROTOCOL LIVE</h3>";
+      }
+    };
+
+    const interval = setInterval(updateCountdown, 1000);
+    updateCountdown();
+  });
+</script>
 
           <div class="col-lg-6 hero-newsletter">
             <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
