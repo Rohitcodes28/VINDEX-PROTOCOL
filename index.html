@@ -4,131 +4,456 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Vindex Protocol | Decentralized Immune System</title>
-  <meta name="description" content="The world's first decentralized immune system for financial transactions. AI-powered fraud detection and 100% insurance.">
-  <meta name="keywords" content="Vindex, Fraud Prevention, Crypto Security, UPI Safety, AI Security, Decentralized Insurance">
+  <title>Vindex Protocol | Livelihood Insurance & Financial Fraud Prevention</title>
+  <meta name="description" content="Your career is your greatest asset. Protect your income with AI-powered livelihood insurance. Join our open-source community fighting financial fraud.">
+  <meta name="keywords" content="Livelihood Insurance, Income Protection, Financial Fraud Prevention, Open Source Security">
 
   <link href="assets/img/favicon.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #84cc16; /* Cyber Lime */
-      --bg-dark: #050505;
-      --card-bg: #0a0a0a;
-    }
-    body { font-family: 'Inter', sans-serif; background-color: var(--bg-dark); color: #fff; }
-    h1, h2, h3, .sitename { font-family: 'Space Grotesk', sans-serif; }
-    .header { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(10px); }
-    .hero { padding: 120px 0 60px; background: radial-gradient(circle at center, #111 0%, #050505 100%); }
-    .hero h2 { font-size: 3.5rem; font-weight: 700; letter-spacing: -2px; }
-    .text-primary-vindex { color: var(--primary); }
-    .countdown h3 { font-size: 3rem; font-weight: 700; color: var(--primary); margin-bottom: 0; }
-    .countdown h4 { font-size: 0.8rem; text-transform: uppercase; color: #555; }
-    .countdown > div { padding: 0 20px; border-right: 1px solid #222; }
-    .countdown > div:last-child { border-right: none; }
-    .btn-vindex { background: var(--primary); color: #000; font-weight: 700; border-radius: 50px; padding: 12px 30px; transition: 0.3s; border: none; }
-    .btn-vindex:hover { transform: scale(1.05); background: #a3e635; }
-    .btn-outline-vindex { border: 1px solid #333; color: #fff; border-radius: 50px; padding: 12px 30px; }
-    .btn-outline-vindex:hover { border-color: var(--primary); color: var(--primary); }
-    .feature-card { background: var(--card-bg); border: 1px solid #111; padding: 40px; border-radius: 24px; transition: 0.3s; }
-    .feature-card:hover { border-color: var(--primary); transform: translateY(-10px); }
-    .github-banner { background: #111; border-radius: 15px; padding: 20px; border-left: 4px solid var(--primary); }
-  </style>
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="index-page">
+<body>
 
   <header id="header" class="header d-flex align-items-center px-3 sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename" style="color: #fff; font-weight: 800; italic">VINDEX<span class="text-primary-vindex">_</span></h1>
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
+        <h1 class="sitename mb-0">VINDEX<span class="text-teal">_</span></h1>
       </a>
-      <!-- <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">The Protocol</a></li>
-          <li><a href="#developers">For Developers</a></li>
-        </ul>
-      </nav> -->
-      <a href="https://github.com/Rohitcodes28/VINDEX-PROTOCOL" target="_blank" class="btn-vindex d-none d-md-block">Star on GitHub</a>
+      <a href="#calculator" class="btn-primary-vindex d-none d-md-block">Get Your Quote</a>
     </div>
   </header>
 
-  <main class="main">
+  <main>
 
-    <section id="hero" class="hero section">
+    <!-- Hero Section -->
+    <section class="hero">
       <div class="container text-center" data-aos="fade-up">
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <span class="badge rounded-pill bg-dark border border-secondary mb-3 px-3 py-2">V1.0 BETA LAUNCHING SOON</span>
-            <h2>The Immune System for Your <span class="text-primary-vindex">Financial Freedom.</span></h2>
-            <p class="text-gray-400 mb-5" style="font-size: 1.2rem; color: #888;">Protecting UPI, Credit Cards, and Crypto with an AI-driven decentralized fraud ledger.</p>
-          </div>
-
-          <div class="countdown d-flex justify-content-center mb-5" data-count="2026/02/09">
-            <div><h3 class="count-days">14</h3><h4>Days</h4></div>
-            <div><h3 class="count-hours">00</h3><h4>Hours</h4></div>
-            <div><h3 class="count-minutes">00</h3><h4>Min</h4></div>
-            <div><h3 class="count-seconds">00</h3><h4>Sec</h4></div>
-          </div>
-
-          <div class="col-lg-6 hero-newsletter">
-            <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
-              <a href="#developers" class="btn-vindex">Join the Community</a>
-              <a href="https://github.com/Rohitcodes28/VINDEX-PROTOCOL" target="_blank" class="btn-outline-vindex"><i class="bi bi-github me-2"></i>Explore Source Code</a>
+            <span class="badge-trust">
+              <i class="bi bi-shield-check me-2"></i>Trusted by 350+ Professionals
+            </span>
+            <h1>Your Career is Your Greatest Asset.<br>Let's Make It <span class="text-teal">Unstoppable.</span></h1>
+            <p class="lead">The world is changing fast—AI, market shifts, and industry pivots. Standard insurance covers your car and your health, but who covers your lifestyle? We don't just insure your job; we insure your ability to thrive.</p>
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mt-4">
+              <a href="#calculator" class="btn-primary-vindex">Calculate Your Premium</a>
+              <a href="#how-it-works" class="btn-outline-vindex">Learn How It Works</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="py-5">
+    <!-- Story Section -->
+    <section class="story-section">
       <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="story-card" data-aos="fade-up">
+              <h3>From Job Volatility to Income Security</h3>
+              <p>Imagine this: You've built a career, a lifestyle, a family that depends on you. Then, overnight, your industry shifts. AI replaces your role. A market downturn hits your company. Suddenly, the income you relied on is gone.</p>
+              <p class="mt-3">Traditional insurance won't help you here. But <span class="highlight-text">Vindex Protocol</span> will.</p>
+            </div>
+
+            <div class="story-card" data-aos="fade-up" data-aos-delay="100">
+              <h3>More Than Just a Check—We Help You Pivot</h3>
+              <p>When you lose your income source, we don't just give you money. We give you <span class="highlight-text">upskilling vouchers</span> to learn the next big thing. We provide <span class="highlight-text">fraud protection</span> so you're never caught off guard. We ensure your family's lifestyle continues, uninterrupted.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="calculator-section">
+      <div class="container">
+        <div class="calculator-container" data-aos="zoom-in">
+          <div class="calculator-header">
+            <h2>Secure Your Family's Future in 60 Seconds</h2>
+            <p>Get a personalized quote based on your professional and financial profile</p>
+          </div>
+
+          <div class="step-indicator">
+            <div class="step-dot active" data-step="1"></div>
+            <div class="step-dot" data-step="2"></div>
+            <div class="step-dot" data-step="3"></div>
+            <div class="step-dot" data-step="4"></div>
+          </div>
+
+          <form id="calculatorForm">
+            <!-- Step 1: Personal Info -->
+            <div class="form-step active" data-step="1">
+              <h4 class="mb-4">Personal Information</h4>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" id="fullName" required placeholder="Enter your full name">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Email *</label>
+                  <input type="email" class="form-control" id="email" required placeholder="your.email@example.com">
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Location Type</label>
+                  <div class="toggle-switch">
+                    <span>India (+91)</span>
+                    <div class="toggle-input" id="locationToggle" onclick="toggleLocation()"></div>
+                    <span>International</span>
+                  </div>
+                  <input type="hidden" id="locationType" value="india">
+                </div>
+                <div class="col-md-6" id="phoneFieldIndia">
+                  <label class="form-label">Phone Number *</label>
+                  <div class="input-group">
+                    <span class="input-group-text">+91</span>
+                    <input type="tel" class="form-control" id="phoneIndia" required placeholder="9876543210" pattern="[0-9]{10}">
+                  </div>
+                </div>
+                <div class="col-md-6" id="phoneFieldIntl" style="display: none;">
+                  <label class="form-label">Phone Number *</label>
+                  <input type="tel" class="form-control" id="phoneIntl" placeholder="+1 234 567 8900">
+                </div>
+                <div class="col-md-6" id="cityField">
+                  <label class="form-label">City *</label>
+                  <select class="form-select" id="city" required>
+                    <option value="">Select your city</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Kanpur">Kanpur</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Indore">Indore</option>
+                    <option value="Thane">Thane</option>
+                    <option value="Bhopal">Bhopal</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                    <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Vadodara">Vadodara</option>
+                    <option value="Ghaziabad">Ghaziabad</option>
+                    <option value="Ludhiana">Ludhiana</option>
+                    <option value="Agra">Agra</option>
+                    <option value="Nashik">Nashik</option>
+                    <option value="Faridabad">Faridabad</option>
+                    <option value="Meerut">Meerut</option>
+                    <option value="Rajkot">Rajkot</option>
+                    <option value="Kalyan-Dombivali">Kalyan-Dombivali</option>
+                    <option value="Vasai-Virar">Vasai-Virar</option>
+                    <option value="Varanasi">Varanasi</option>
+                    <option value="Srinagar">Srinagar</option>
+                    <option value="Aurangabad">Aurangabad</option>
+                    <option value="Dhanbad">Dhanbad</option>
+                    <option value="Amritsar">Amritsar</option>
+                    <option value="Navi Mumbai">Navi Mumbai</option>
+                    <option value="Allahabad">Allahabad</option>
+                    <option value="Ranchi">Ranchi</option>
+                    <option value="Howrah">Howrah</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Jabalpur">Jabalpur</option>
+                    <option value="Gwalior">Gwalior</option>
+                    <option value="Vijayawada">Vijayawada</option>
+                    <option value="Jodhpur">Jodhpur</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Raipur">Raipur</option>
+                    <option value="Kota">Kota</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Guwahati">Guwahati</option>
+                    <option value="Noida">Noida</option>
+                    <option value="Gurugram">Gurugram</option>
+                  </select>
+                </div>
+                <div class="col-md-6" id="countryField" style="display: none;">
+                  <label class="form-label">Country *</label>
+                  <input type="text" class="form-control" id="country" placeholder="Enter your country">
+                </div>
+              </div>
+              <div class="d-flex justify-content-end mt-4">
+                <button type="button" class="btn-next" onclick="nextStep(1)">Next Step</button>
+              </div>
+            </div>
+
+            <!-- Step 2: Professional Profile -->
+            <div class="form-step" data-step="2">
+              <h4 class="mb-4">Professional Profile</h4>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Current Annual CTC (₹) *</label>
+                  <input type="number" class="form-control" id="annualCTC" required placeholder="e.g., 1200000">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Years of Experience *</label>
+                  <input type="number" class="form-control" id="experience" required placeholder="e.g., 5">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Industry/Sector *</label>
+                  <select class="form-select" id="industry" required>
+                    <option value="">Select your industry</option>
+                    <option value="technology">Technology/IT</option>
+                    <option value="finance">Finance/Banking</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="consulting">Consulting</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">College Tier *</label>
+                  <select class="form-select" id="collegeTier" required>
+                    <option value="">Select college tier</option>
+                    <option value="tier1">Tier 1 (IIT, IIM, NIT, etc.)</option>
+                    <option value="tier2">Tier 2 (State Universities)</option>
+                    <option value="tier3">Tier 3 (Private Colleges)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn-prev" onclick="prevStep(2)">Previous</button>
+                <button type="button" class="btn-next" onclick="nextStep(2)">Next Step</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Financial Profile -->
+            <div class="form-step" data-step="3">
+              <h4 class="mb-4">Financial Profile</h4>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Monthly Necessary Expenditure (₹) *</label>
+                  <input type="number" class="form-control" id="monthlyExpenditure" required placeholder="e.g., 50000">
+                  <small class="text-muted">Include rent, utilities, groceries, EMIs, etc.</small>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Number of Dependents *</label>
+                  <input type="number" class="form-control" id="dependents" required placeholder="e.g., 3">
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Does your spouse earn? *</label>
+                  <div class="toggle-switch">
+                    <span>No</span>
+                    <div class="toggle-input" id="spouseEarningToggle" onclick="toggleSpouseEarning()"></div>
+                    <span>Yes</span>
+                  </div>
+                  <input type="hidden" id="spouseEarning" value="no">
+                </div>
+                <div class="col-md-6" id="spouseSalaryField" style="display: none;">
+                  <label class="form-label">Spouse's Annual Salary (₹)</label>
+                  <input type="number" class="form-control" id="spouseSalary" placeholder="e.g., 800000">
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn-prev" onclick="prevStep(3)">Previous</button>
+                <button type="button" class="btn-next" onclick="calculatePremium()">Calculate Premium</button>
+              </div>
+            </div>
+
+            <!-- Step 4: Results -->
+            <div class="form-step" data-step="4">
+              <div class="result-card">
+                <h3>Your Personalized Quote</h3>
+                <div class="premium-amount">₹<span id="premiumAmount">0</span>/mo</div>
+                <div class="coverage-amount">Coverage: ₹<span id="coverageAmount">0</span></div>
+                <p class="mt-3 mb-0">Family Security Score: <strong><span id="securityScore">0</span>/100</strong></p>
+              </div>
+
+              <div class="risk-score-card" id="riskScoreCard" style="display: none;">
+                <h4><i class="bi bi-exclamation-triangle-fill me-2"></i>Market Stability Alert</h4>
+                <p id="riskScoreText"></p>
+                <div class="risk-meter">
+                  <div class="risk-meter-fill" id="riskMeterFill" style="width: 0%"></div>
+                </div>
+              </div>
+
+              <div class="text-center mt-4">
+                <button type="button" class="btn-primary-vindex btn-lg" onclick="submitQuote()">Get Official Quote</button>
+                <p class="text-muted mt-3 mb-0">Our team will reach out within 24 hours with your personalized PDF quote</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+      <div class="container">
+        <h2 data-aos="fade-up">How Vindex Protocol Works</h2>
         <div class="row g-4">
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
             <div class="feature-card">
-              <i class="bi bi-shield-check text-primary-vindex fs-1"></i>
-              <h4 class="mt-3">Vindex Ledger</h4>
-              <p class="text-secondary">A decentralized P2P database of verified fraud signatures. Immutable and community-driven.</p>
+              <div class="feature-icon">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <h4>Decentralized Communication</h4>
+              <p>Your protection is powered by a community-driven, transparent protocol. No single point of failure, no hidden terms. Every claim is verified through our distributed network.</p>
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="feature-card">
-              <i class="bi bi-cpu text-primary-vindex fs-1"></i>
-              <h4 class="mt-3">Sentinel AI</h4>
-              <p class="text-secondary">An agentic layer monitoring transaction patterns. Identify betting scams and phishing in real-time.</p>
+              <div class="feature-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4>Proof of Fraud Engine</h4>
+              <p>Our AI-powered fraud detection ensures claims are processed securely and fairly. Legitimate claims are approved instantly, while fraudulent ones are flagged automatically.</p>
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="feature-card">
-              <i class="bi bi-safe text-primary-vindex fs-1"></i>
-              <h4 class="mt-3">1% Protection</h4>
-              <p class="text-secondary">Automated insurance layer. Verified protocol breaches result in 100% reimbursement.</p>
+              <div class="feature-icon">
+                <i class="bi bi-lightning-charge"></i>
+              </div>
+              <h4>Instant Payouts</h4>
+              <p>When you need support, you get it immediately. No paperwork delays, no bureaucracy. Your claim is verified and paid out within 48 hours.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="developers" class="py-5 bg-black">
+    <!-- Open Source Community Section -->
+    <section id="open-source" class="open-source-section">
       <div class="container">
-        <div class="github-banner" data-aos="zoom-in">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h3>Calling All <span class="text-primary-vindex">Architects.</span></h3>
-              <p class="mb-0">Vindex is fully open-source. We are looking for Go developers, AI researchers, and security experts to help build the protocol.</p>
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2 class="mb-4">Join the Fight Against Financial Fraud</h2>
+            <p class="lead mb-4">Vindex Protocol isn't just insurance—it's an <strong>open-source movement</strong> to protect everyone from financial fraud.</p>
+            <p>We're building a decentralized immune system for financial transactions. Our community of developers, security researchers, and ethical hackers work together to identify fraud patterns, share threat intelligence, and protect millions of users worldwide.</p>
+            
+            <div class="community-stats mt-4">
+              <div class="row g-3">
+                <div class="col-6 col-md-3">
+                  <div class="stat-card">
+                    <h3>30+</h3>
+                    <p>Contributors</p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="stat-card">
+                    <h3>50+</h3>
+                    <p>GitHub Stars</p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="stat-card">
+                    <h3>20,000+</h3>
+                    <p>Transactions Protected</p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="stat-card">
+                    <h3>99.9%</h3>
+                    <p>Fraud Detection</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4 text-md-end mt-3 mt-lg-0">
-              <a href="https://github.com/Rohitcodes28/VINDEX-PROTOCOL" target="_blank" class="btn-vindex">Contribute on GitHub</a>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="github-card">
+              <div class="github-header">
+                <i class="bi bi-github"></i>
+                <h3>Open Source Repository</h3>
+              </div>
+              <p>Explore our codebase, contribute to the protocol, and help us build a safer financial future for everyone.</p>
+              
+              <div class="repo-features">
+                <div class="feature-item">
+                  <i class="bi bi-code-slash"></i>
+                  <span>Built with Go, Python & Solidity</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-shield-lock"></i>
+                  <span>End-to-end encryption</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-people"></i>
+                  <span>Community-driven development</span>
+                </div>
+                <div class="feature-item">
+                  <i class="bi bi-file-earmark-text"></i>
+                  <span>MIT License - Free forever</span>
+                </div>
+              </div>
+
+              <div class="github-actions mt-4">
+                <a href="https://github.com/Rohitcodes28/VINDEX-PROTOCOL" target="_blank" class="btn-primary-vindex w-100 mb-3">
+                  <i class="bi bi-github me-2"></i>View on GitHub
+                </a>
+                <a href="https://github.com/Rohitcodes28/VINDEX-PROTOCOL" target="_blank" class="btn-outline-vindex w-100" style="color: var(--primary-navy); border-color: var(--border-color);">
+                  <i class="bi bi-star me-2"></i>Star the Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h2 class="text-center mb-5" data-aos="fade-up">What Makes Us Different</h2>
+            <div class="row">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-item">
+                  <div class="benefit-icon">
+                    <i class="bi bi-book"></i>
+                  </div>
+                  <div class="benefit-content">
+                    <h4>Upskilling Vouchers</h4>
+                    <p>Get access to premium courses and certifications worth ₹50,000 to pivot to your next career opportunity.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-item">
+                  <div class="benefit-icon">
+                    <i class="bi bi-shield-fill-check"></i>
+                  </div>
+                  <div class="benefit-content">
+                    <h4>Fraud Protection</h4>
+                    <p>Complete protection against financial fraud, identity theft, and cyber scams with 100% reimbursement.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="benefit-item">
+                  <div class="benefit-icon">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="benefit-content">
+                    <h4>Family Coverage</h4>
+                    <p>Your entire family is protected. Spouse and dependents get coverage for their income security too.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="benefit-item">
+                  <div class="benefit-icon">
+                    <i class="bi bi-graph-up-arrow"></i>
+                  </div>
+                  <div class="benefit-content">
+                    <h4>Career Transition Support</h4>
+                    <p>Get personalized career counseling and job placement assistance during your transition period.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -137,53 +462,47 @@
 
   </main>
 
-  <footer id="footer" class="py-5">
-    <div class="container text-center">
-      <p class="text-secondary">© 2026 <strong class="text-white">Vindex Protocol</strong>. All Rights Reserved.</p>
-      <div class="social-links d-flex justify-content-center gap-3">
-        <a href="https://github.com/Rohitcodes28/VINDEX-PROTOCOL" class="text-secondary fs-4"><i class="bi bi-github text-primary-vindex"></i></a>
-        <a href="#" class="text-secondary fs-4"><i class="bi bi-discord"></i></a>
-        <a href="#" class="text-secondary fs-4"><i class="bi bi-twitter-x"></i></a>
+  <footer>
+    <div class="container">
+      <!-- Newsletter Section -->
+      <div class="newsletter-section text-center mb-4" data-aos="fade-up">
+        <h3 class="mb-3">Stay Updated</h3>
+        <p class="mb-4">Get the latest updates on fraud prevention, insurance tips, and community news.</p>
+        <form id="newsletterForm" class="newsletter-form">
+          <div class="input-group">
+            <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter your email" required>
+            <button type="submit" class="btn-primary-vindex">Subscribe</button>
+          </div>
+          <small class="text-muted d-block mt-2">We respect your privacy. Unsubscribe anytime.</small>
+        </form>
       </div>
+
+      <hr style="border-color: rgba(255,255,255,0.1); margin: 40px 0;">
+
+      <div class="footer-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#calculator">Get Quote</a>
+        <a href="#open-source">Open Source</a>
+        <a href="https://github.com/Rohitcodes28/VINDEX-PROTOCOL" target="_blank">GitHub</a>
+        <a href="mailto:rohitash@vindexprotocol.com">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+      <div class="social-links d-flex justify-content-center gap-3 mb-3">
+        <a href="https://github.com/Rohitcodes28/VINDEX-PROTOCOL" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-discord"></i></a>
+      </div>
+      <p class="text-muted mb-0 text-center">© 2026 <strong>Vindex Protocol</strong>. All Rights Reserved.</p>
+      <p class="text-muted small mt-2 text-center">Powered by decentralized technology. Secured by community trust.</p>
     </div>
   </footer>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      AOS.init();
-      
-      // Target date: 14 days from Jan 26, 2026 (Feb 9, 2026)
-      const countdownDate = new Date("Feb 9, 2026 12:00:00").getTime();
-
-      const updateCountdown = () => {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
-
-        const d = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const s = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.querySelector('.count-days').innerText = d;
-        document.querySelector('.count-hours').innerText = h.toString().padStart(2, '0');
-        document.querySelector('.count-minutes').innerText = m.toString().padStart(2, '0');
-        document.querySelector('.count-seconds').innerText = s.toString().padStart(2, '0');
-
-        if (distance < 0) {
-          clearInterval(interval);
-          document.querySelector('.countdown').innerHTML = "<h3>PROTOCOL LIVE</h3>";
-        }
-      };
-
-      const interval = setInterval(updateCountdown, 1000);
-      updateCountdown();
-    });
-  </script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>

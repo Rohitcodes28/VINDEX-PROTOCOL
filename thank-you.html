@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Thank You | Vindex Protocol</title>
+  <meta name="description" content="Thank you for your interest in Vindex Protocol Livelihood Insurance">
+
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .thank-you-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--primary-navy) 0%, var(--royal-blue) 100%);
+      color: white;
+      padding: 60px 20px;
+    }
+
+    .thank-you-card {
+      background: white;
+      border-radius: 24px;
+      padding: 60px 40px;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .success-icon {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, var(--teal-accent), var(--emerald-accent));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 30px;
+      font-size: 3rem;
+      color: white;
+      animation: scaleIn 0.5s ease-out;
+    }
+
+    @keyframes scaleIn {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .thank-you-card h1 {
+      color: var(--primary-navy);
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .thank-you-card p {
+      color: var(--text-grey);
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .quote-summary {
+      background: var(--light-grey);
+      border-radius: 15px;
+      padding: 30px;
+      margin: 30px 0;
+      text-align: left;
+    }
+
+    .quote-summary h3 {
+      color: var(--primary-navy);
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .quote-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .quote-item:last-child {
+      border-bottom: none;
+    }
+
+    .quote-label {
+      color: var(--text-grey);
+      font-weight: 500;
+    }
+
+    .quote-value {
+      color: var(--primary-navy);
+      font-weight: 600;
+    }
+
+    .premium-highlight {
+      background: linear-gradient(135deg, var(--teal-accent), var(--emerald-accent));
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .premium-highlight h4 {
+      color: white;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .premium-highlight .amount {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .next-steps {
+      background: #FEF3C7;
+      border-left: 4px solid var(--soft-amber);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 30px 0;
+      text-align: left;
+    }
+
+    .next-steps h4 {
+      color: #92400E;
+      margin-bottom: 15px;
+    }
+
+    .next-steps ul {
+      color: #78350F;
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .next-steps li {
+      margin-bottom: 8px;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="thank-you-section">
+    <div class="container">
+      <div class="thank-you-card">
+        <div class="success-icon">
+          <i class="bi bi-check-circle-fill"></i>
+        </div>
+
+        <h1>Thank You!</h1>
+        <p>Your quote request has been successfully submitted.</p>
+        <p>We've received your information and our team will review your profile.</p>
+
+        <div class="quote-summary" id="quoteSummary">
+          <h3>Your Quote Summary</h3>
+          <div class="quote-item">
+            <span class="quote-label">Full Name</span>
+            <span class="quote-value" id="displayName">-</span>
+          </div>
+          <div class="quote-item">
+            <span class="quote-label">Email</span>
+            <span class="quote-value" id="displayEmail">-</span>
+          </div>
+          <div class="quote-item">
+            <span class="quote-label">Location</span>
+            <span class="quote-value" id="displayLocation">-</span>
+          </div>
+          <div class="quote-item">
+            <span class="quote-label">Coverage Amount</span>
+            <span class="quote-value">₹<span id="displayCoverage">0</span></span>
+          </div>
+          <div class="quote-item">
+            <span class="quote-label">Security Score</span>
+            <span class="quote-value"><span id="displayScore">0</span>/100</span>
+          </div>
+
+          <div class="premium-highlight">
+            <h4>Your Monthly Premium</h4>
+            <div class="amount">₹<span id="displayPremium">0</span></div>
+            <small>Estimated based on your profile</small>
+          </div>
+        </div>
+
+        <div class="next-steps">
+          <h4><i class="bi bi-clock-history me-2"></i>What Happens Next?</h4>
+          <ul>
+            <li><strong>Within 24 hours:</strong> Our team will review your application</li>
+            <li><strong>Personalized PDF Quote:</strong> You'll receive a detailed quote via email</li>
+            <li><strong>Free Consultation:</strong> Schedule a call with our insurance advisor</li>
+            <li><strong>Quick Activation:</strong> Get covered in as little as 48 hours</li>
+          </ul>
+        </div>
+
+        <div class="action-buttons">
+          <a href="index.html" class="btn-primary-vindex">Back to Home</a>
+          <a href="https://github.com/Rohitcodes28/VINDEX-PROTOCOL" target="_blank" class="btn-outline-vindex" style="color: var(--primary-navy); border-color: var(--primary-navy);">
+            <i class="bi bi-github me-2"></i>Explore Open Source
+          </a>
+        <p class="mt-3 text-muted small">
+          <a href="privacy-policy.html" style="color: var(--teal-accent);">Privacy Policy</a> | 
+          <a href="index.html#open-source" style="color: var(--teal-accent);">Open Source</a>
+        </p>
+        </div>
+
+        <p class="mt-4 text-muted small">
+          Questions? Email us at <a href="mailto:rohitash@vindexprotocol.com" style="color: var(--teal-accent);">rohitash@vindexprotocol.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Get data from URL parameters or localStorage
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      
+      // Try to get data from URL parameters first
+      const name = urlParams.get('name') || localStorage.getItem('quoteName') || 'Valued Customer';
+      const email = urlParams.get('email') || localStorage.getItem('quoteEmail') || '-';
+      const location = urlParams.get('location') || localStorage.getItem('quoteLocation') || '-';
+      const premium = urlParams.get('premium') || localStorage.getItem('quotePremium') || '0';
+      const coverage = urlParams.get('coverage') || localStorage.getItem('quoteCoverage') || '0';
+      const score = urlParams.get('score') || localStorage.getItem('quoteScore') || '0';
+
+      // Display the data
+      document.getElementById('displayName').textContent = name;
+      document.getElementById('displayEmail').textContent = email;
+      document.getElementById('displayLocation').textContent = location;
+      document.getElementById('displayPremium').textContent = premium;
+      document.getElementById('displayCoverage').textContent = coverage;
+      document.getElementById('displayScore').textContent = score;
+
+      // Clear localStorage after displaying
+      localStorage.removeItem('quoteName');
+      localStorage.removeItem('quoteEmail');
+      localStorage.removeItem('quoteLocation');
+      localStorage.removeItem('quotePremium');
+      localStorage.removeItem('quoteCoverage');
+      localStorage.removeItem('quoteScore');
+    });
+  </script>
+
+</body>
+</html>
